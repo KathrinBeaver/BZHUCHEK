@@ -1,0 +1,105 @@
+﻿<Window x:Class="наВинду.ChoiceDiet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:наВинду"
+        mc:Ignorable="d"
+        Title="Выбор диеты" Height="470" Width="489" Background="#FF4B4D4B" ScrollViewer.VerticalScrollBarVisibility="Auto" ResizeMode="NoResize">
+    <Grid ScrollViewer.CanContentScroll="True">
+        <Button x:Name="PersonalDataPage" Content="Личные данные" HorizontalAlignment="Left" Margin="322,389,-2.189,0" VerticalAlignment="Top" Width="162" Height="50" FontSize="15" Click="PersonalDataPage_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF4F544E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ChoiceDietPage" Content="Выбор диеты" HorizontalAlignment="Left" Margin="159,389,0,0" VerticalAlignment="Top" Width="164" Height="50" FontSize="15" Click="ChoiceDietPage_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF4F544E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="FoodDiaryPage" Content="Дневник питания" HorizontalAlignment="Left" Margin="-2,389,0,0" VerticalAlignment="Top" Width="162" Height="50" FontSize="15" Click="FoodDiaryPage_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF4F544E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ScrollViewer Margin="0,0,-0.189,52.057">
+            <StackPanel>
+                <Label Content="БУЧ" FontSize="16" Foreground="White" Width="100" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" IsHitTestVisible="False"/>
+                <TextBlock x:Name="TextBlockBUCH" TextWrapping="Wrap" Width="400" Height="305" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="12" Text="Лучшее средство для здорового похудения, стабильность которого обеспечивается разнообразием диеты, в основе которой лежит чередование белкового и углеводного рационов питания (БУЧ диета), разработана для интенсивного снижения веса за счет жировых отложений. Белково-углеводная диета направлена на уменьшение подкожно-жировой прослойки, что позволяет не только похудеть, но и улучшить рельефность мускулатуры и выразительность тела. Так же  БУЧ диета используется и для снижения массы тела (для похудения). При такой системе питания организм для получения энергии использует преимущественно жиры, избегая потери массы тела за счет распада белков, то есть, мышечная масса как метаболическое топливо не используется. Поэтому необходимо производить подсчет калорий, а так же белков, жиров и углеводов, потребляемых в день. Диета БУЧ состоит из микроциклов, минимальная продолжительность которых составляет трое суток. Первые сутки — белковый день, вторые – углеводный день, третьи – смешанный, в который следует употреблять равное количество белков и углеводов. Эффективность: 3-5кг. Сроки: от месяца. Противопоказания: беременность, кормление грудью, запрещено детям. "/>
+                <Button x:Name="choiceBUCH" Content="Выбрать"  HorizontalAlignment="Right" Width="70" Height="25" FontSize="12" Click="ChoiceBUCH_Click">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                            <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                            <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                            <GradientStop Color="#FF4F544E" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Label Content="Низкокалорийная диета" FontSize="16" Foreground="White" Width="200" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" IsHitTestVisible="False"/>
+                <TextBlock x:Name ="TextBlockNizkoKal" TextWrapping="Wrap" Text="Базируется на принципе каждодневного строгого снижения количества употребляемых калорий и ограничения привычного рациона питания, так что при желании избавиться от лишних килограммов веса при помощи данного диетического метода, как и при БУЧе, придется вести точный подсчет калорийности съеденных продуктов, а так же белков, жиров и углеводов. При этой системе питания необходимо разделить суточный объем принимаемой пищи на 5-6 отдельных приемов; заключительный прием пищи следует практиковать минимум за 4 часа до сна; ежесуточная норма жиров не должна превышать 80 грамм, при этом нужно отдавать предпочтение растительным жирам (орехи, масло, семечки); ежедневный лимит сложных углеводов (фрукты, злаки, овощи) должен быть ограничен 100 граммами; необходимо ограничить поступление в организм животных жиров и соли, а простые углеводы (сахар) исключить полностью. Эффективность: 1-5 кг. Сроки: от недели. Противопоказания: беременность, кормление грудью, детям." Width="400" Height="260" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="12"/>
+                <Button x:Name="chOiceNizkoKal" Content="Выбрать"  HorizontalAlignment="Right" Width="70" Height="25" FontSize="12" Click="ChOiceNizkoKal_Click_1">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                            <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                            <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                            <GradientStop Color="#FF4F544E" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Label Content="Белковая диета" FontSize="16" Foreground="White" Width="200" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" IsHitTestVisible="False"/>
+                <TextBlock x:Name="TextBlockBelk" TextWrapping="Wrap" Text="Состоит из базовых методик многих систем, относящихся к похудению. Принцип питания — это минимальное количество жиров в рационе, недостаток углеводов. В результате Вы получите гарантированный сброс веса. Основные правила: выбирайте продукты, в которых много белка; полный отказ от потребления продуктов, богатых углеводами (сахар, картофель, макароны разных видов, изделия, сделанные их теста), а так же, отказ от продуктов, представляющих чистые жиры (животный жир, майонез); возможно кушать без каких-либо ограничений фрукты, рыбу, овощи, яйца, постное масло, салаты, молочные продукты (не жирные). В результате от диеты человек получает ощущение сытости. Объясняется такое более длительным перевариванием разрешенной к употреблению пищи, чем углеводной. Эффективность: 5-7кг. Сроки: 14-28 дней. Противопоказания: выраженные заболевания почек; проблемы печени; при желчекаменной болезни; тяжелые болезни ЖКТ; новообразования онкологической природы; тяжелые сердечные заболевания; беременность." Width="400" Height="280" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="12"/>
+                <Button x:Name="chOiceBelk" Content="Выбрать"  HorizontalAlignment="Right" Width="70" Height="25" FontSize="12" Click="ChOiceBelk_Click_1">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                            <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                            <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                            <GradientStop Color="#FF4F544E" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Label Content="Диета для набора массы" FontSize="16" Foreground="White" Width="250" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" IsHitTestVisible="False"/>
+                <TextBlock x:Name="TextBlockNabor" TextWrapping="Wrap" Text="Диета для набора мышечной массы: С задачей набора мышечной массы сталкиваются как профессиональные спортсмены, занимающиеся различными видами спорта, так и женщины/мужчины, желающие изменить параметры своей фигуры. Особенно часто работают на массу в таких видах силового спорта как бодибилдинг, тяжелая атлетика, фитнес. Для увеличения массы мышц необходимо добиться увеличения содержания в них структурных и сократительных белков. Важно для быстрого роста мышц научится влиять на процесс увеличения количества белков в мышечной ткани. Соответственно, в основе этой диеты лежит принцип увеличения употребления калорий в день, за счет увеличения количества белков. Сроки: 2-4 месяца." Width="400" Height="180" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="12"/>
+                <Button x:Name="chOiceNabor" Content="Выбрать"  HorizontalAlignment="Right" Width="70" Height="25" FontSize="12" Click="ChOiceNabor_Click_1">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                            <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                            <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                            <GradientStop Color="#FF4F544E" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Label Content="Атомная диета" FontSize="16" Foreground="White" Width="150" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" IsHitTestVisible="False"/>
+                <TextBlock x:Name="TextBlockAtom" TextWrapping="Wrap" Text="В основе атомной диеты лежит раздельное питание. Сытный и богатый рацион не позволяет испытывать чувство голода. Состоит из 2х циклов: углеводный день и белковый дни, которые необходимо чередовать. Конечный результат во многом зависит от начального веса и количества лишних килограмм. Чем меньше у вас лишнего веса, тем быстрее вы от него избавитесь. Рекомендуется пить  зелёный чай с добавлением имбиря для ускорения метаболизма. Эффективность: 5кг. Сроки: от 1 недели. Противопоказания: беременность, грудное вскармливание, детям, наличие онкопатологии, нарушения в работе пищеварительной системы, сахарный диабет, сердечная недостаточность, хронические воспалительные заболевания органов брюшной полости, недостаточность почечной систем." Width="400" Height="190" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="12"/>
+                <Button x:Name="chOiceAtom" Content="Выбрать"  HorizontalAlignment="Right" Width="70" Height="25" FontSize="12" Click="ChOiceAtom_Click_1">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                            <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                            <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                            <GradientStop Color="#FF4F544E" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

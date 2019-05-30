@@ -1,0 +1,62 @@
+﻿<Window x:Class="наВинду.ProductSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:наВинду"
+        mc:Ignorable="d"
+        Title="Выбор продукта" Height="470" Width="489" Background="#FF4B4D4B">
+    <Grid x:Name="choiceProductAndDishGrid">
+        <TextBox x:Name="textBoxSearchDish" HorizontalAlignment="Left" Height="25" Margin="13,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="14" FontStyle="Italic" TextChanged="TextoxSearchDish_TextChanged" SpellCheck.IsEnabled="True"/>
+        <Button x:Name="buttonSearchDish" Content="Поиск" HorizontalAlignment="Left" Margin="353,32,0,0" VerticalAlignment="Top" Width="105" Height="26" FontSize="14" Click="ButtonSearchDish_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF4F544E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="buttonBack" Content="Отмена" HorizontalAlignment="Left" Margin="13,400,0,0" VerticalAlignment="Top" Width="105" Height="30" FontSize="14" Click="ButtonAnnulment_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF4F544E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="buttonAdd" Content="Добавить" HorizontalAlignment="Left" Margin="353,362,0,0" VerticalAlignment="Top" Width="105" Height="30" FontSize="14" Click="ButtonAdd_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF4F544E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="buttonAddOwnDish" Content="Добавить своё блюдо" HorizontalAlignment="Left" Margin="258,400,0,0" VerticalAlignment="Top" Width="200" Height="30" FontSize="14" Click="ButtonAddOwnDish_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF4F544E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="Введите название продукта:" HorizontalAlignment="Left" Margin="13,2,0,0" VerticalAlignment="Top" Width="215" Foreground="White" FontSize="14" IsEnabled="False"/>
+        <Border BorderBrush="white" BorderThickness="1" HorizontalAlignment="Left" Height="280" Margin="13,73,0,0" VerticalAlignment="Top" Width="445">
+            <ScrollViewer x:Name="scrollViewerProductAndDish" Margin="-1,0,-1,0" Foreground="White" BorderBrush="White">
+                <StackPanel x:Name="stackPanelIngredient1" Width="415">
+                    <Grid x:Name="gridProductAndDish" Grid.Column="2">
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+    </Grid>
+</Window>
